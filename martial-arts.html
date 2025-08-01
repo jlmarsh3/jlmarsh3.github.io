@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josh Marsh - Martial Arts Background</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="global.css">
+  <style>
+    /* Gallery Styles - Masonry Layout for Different Image Sizes */
+    .gallery {
+      column-count: 3;
+      column-gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: block;
+      break-inside: avoid;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .gallery {
+        column-count: 2;
+        column-gap: 15px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        column-count: 1;
+        column-gap: 0;
+      }
+      
+      .gallery img {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/profile-ma.jpg" alt="Profile photo" class="header-img" />
+  <div class="header-text">
+    <h1>Josh Marsh, 4th Dan</h1>
+    <p>Martial Arts Background</p>
+  </div>
+</header>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
+      <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="Josh_Marsh_Resume.pdf" download><i class="fas fa-download"></i> Resume PDF</a>
+      <a href="mailto:jlmarsh333@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://www.linkedin.com/in/joshmarsh/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="martial-arts.html" class="active"><i class="fas fa-dumbbell"></i> Martial Arts</a>
+    </div>
+  </nav>
+
+  <section>
+    <div class="card">
+      <h2>Disciplines & Ranks</h2>
+      <ul>
+        <li><strong>Taekwondo</strong> – 4th Degree Black Belt</li>
+        <li><strong>Hapkido</strong> – 2nd Degree Black Belt</li>
+        <li><strong>Kumdo</strong> – 1st Degree Black Belt</li>
+        <li><strong>Brazilian Jiu-Jitsu</strong> – Blue Belt</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Instruction & Experience</h2>
+      <p>In my spare time, I serve as an assistant instructor at <strong>Bemidji Total Martial Arts Academy</strong>. I provide training across multiple disciplines under the guidance of Grand Masters Spencer Brant, Cindy Brandt, and Lucas Holzhueter. I have also trained with various affiliated instructors throughout my martial arts journey, which has enriched my understanding and teaching approach across different styles and techniques.</p>
+    </div>
+
+    <div class="card">
+      <h2>Competitions & Activities</h2>
+      <ul>
+        <li>2020 Iowa State Competitor – Sparring (2nd Place)</li>
+        <li>2019 USATaekwondo Nationals Competitor</li>
+        <li>2019 MN State Champion – Sparring (1st Place)</li>
+        <li>2018 USATaekwondo MN State Referee</li>
+        <li>2006 World ChungMooKwan Competitor</li>
+        <li>Local referee, coach, and ongoing competitor</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>USATaekwondo Certified Referee (2018)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+          <img src="martial-arts-gallery/img1.jpg" alt="" />
+          <img src="martial-arts-gallery/img2.jpg" alt="" />
+          <img src="martial-arts-gallery/img3.jpg" alt="" />
+          <img src="martial-arts-gallery/img4.jpg" alt="" />
+          <img src="martial-arts-gallery/img5.jpg" alt="" />
+          <img src="martial-arts-gallery/img6.jpg" alt="" />
+          <img src="martial-arts-gallery/img7.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+<p class="icons">
+  <a href="mailto:jlmarsh333@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+  |
+  <a href="https://www.linkedin.com/in/joshmarsh/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  |
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  |
+  <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
+  |
+  <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+  |
+  <a href="martial-arts.html"><i class="fas fa-dumbbell"></i> Martial Arts</a>
+</p>
+  </footer>
+
+</body>
+</html>

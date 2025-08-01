@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josh Marsh - Professional Experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="global.css">
+  
+  <style>
+    /* Experience Page Specific Styles */
+    .job {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      border-left: 4px solid #3b82f6;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .job:hover {
+      transform: translateY(-3px);
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .job-title {
+      color: #1e3a8a;
+      font-size: 1.3em;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .job-company {
+      color: #374151;
+      font-size: 1.1em;
+      font-weight: 500;
+      margin: 5px 0;
+    }
+
+    .job-period {
+      color: #6b7280;
+      font-size: 0.9em;
+      background: #f3f4f6;
+      padding: 4px 12px;
+      border-radius: 15px;
+      white-space: nowrap;
+    }
+
+    .job-description {
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    .accomplishments {
+      margin-top: 20px;
+    }
+
+    .accomplishments h4 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    .accomplishments ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .accomplishments li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .client-project {
+      background: #f8faff;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+      border-left: 3px solid #3b82f6;
+    }
+
+    .client-name {
+      color: #1e3a8a;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 20px;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: #1e3a8a;
+    }
+
+    .education-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .education-section h3 {
+      margin: 0 0 15px 0;
+      color: white;
+    }
+
+    .degree {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    .university {
+      opacity: 0.9;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .job-header {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      
+      .job-period {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/profile.jpg" alt="Profile photo" class="header-img" />
+  <div class="header-text">
+    <h1>Josh Marsh, PMP</h1>
+    <p>Experience - 20+ Years</p>
+  </div>
+</header>
+
+  <!-- Enhanced Top Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
+      <a href="experience.html" class="active"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="Josh_Marsh_Resume.pdf" download><i class="fas fa-download"></i> Resume PDF</a>
+      <a href="mailto:jlmarsh333@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://www.linkedin.com/in/joshmarsh/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="martial-arts.html"><i class="fas fa-dumbbell"></i> Martial Arts</a>
+    </div>
+  </nav>
+
+<section>
+
+  <div class="job">
+    <div class="job-header">
+      <div>
+        <h3 class="job-title">Associate Director, Technology</h3>
+        <div class="job-company">Omnicom Production (Remote)</div>
+      </div>
+      <div class="job-period">2025 - Present</div>
+    </div>
+    <div class="job-description">
+      In 2025, Omnicom Production was formed from a collection of agencies under the Omnicom umbrella. I retained my current position and responsibilities during and after the transition. Working with many big companies, I have become a trusted contact with several clients, leading technology initiatives and delivering innovative solutions.
+    </div>
+    <div class="accomplishments">
+      <h4><i class="fas fa-trophy"></i> Key Accomplishments</h4>
+      <ul>
+        <li>Dynamic Video Editing Software development</li>
+        <li>Enterprise CMS systems implementation</li>
+        <li>WebGL applications and interactive experiences</li>
+        <li>Asset Review and Approval Workflow Management systems</li>
+        <li>Adobe integration and workflow solutions</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div>
+        <h3 class="job-title">Associate Director, Technology</h3>
+        <div class="job-company">Designory, Chicago, IL (Remote)</div>
+      </div>
+      <div class="job-period">2023 - 2025</div>
+    </div>
+    <div class="job-description">
+      I was promoted to Associate Director level, where I lead technology initiatives and manage client relationships. In this role, I oversee strategic technology decisions and mentor development teams while maintaining direct client engagement.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div>
+        <h3 class="job-title">Lead Engineer, Technology</h3>
+        <div class="job-company">Designory, Chicago, IL (Remote)</div>
+      </div>
+      <div class="job-period">2022 - 2023</div>
+    </div>
+    <div class="job-description">
+      I was promoted to Lead Engineer, where I spearheaded engineering efforts and mentored development teams. This role involved technical leadership, code review processes, and ensuring development best practices across multiple projects.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div>
+        <h3 class="job-title">Senior Engineer, Technology</h3>
+        <div class="job-company">Designory, Chicago, IL (Remote)</div>
+      </div>
+      <div class="job-period">2021 - 2022</div>
+    </div>
+    <div class="job-description">
+      I was recognized for my technical excellence and promoted to senior level responsibilities. In this role, I took on more complex technical challenges and began mentoring junior developers while contributing to architectural decisions.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div>
+        <h3 class="job-title">Engineer, Technology</h3>
+        <div class="job-company">Designory, Chicago, IL (Remote)</div>
+      </div>
+      <div class="job-period">2020 - 2021</div>
+    </div>
+    <div class="job-description">
+      I joined Designory in June 2020 and began working remotely full-time. I accepted a mid-level development position to spend time re-honing my development skills after spending a few years in project management. Over the next few years, I was quickly promoted through Senior, Lead, and Associate Director level positions, demonstrating consistent growth and technical leadership.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div>
+        <h3 class="job-title">Programming Manager</h3>
+        <div class="job-company">Pro-West & Associates Inc., Walker, MN</div>
+      </div>
+      <div class="job-period">2002 - 2020</div>
+    </div>
+    <div class="job-description">
+      I advanced through various roles including software developer, senior software developer, project manager, and programming unit manager. Over 18 years, I successfully executed hundreds of projects across many different industries, including forestry, 911 dispatch, transportation, health care, agriculture, and environmental sciences.
+    </div>
+    
+    <div class="accomplishments">
+      <h4><i class="fas fa-star"></i> Major Client Projects</h4>
+      
+      <div class="client-project">
+        <div class="client-name">Ann Arbor Technical Services (ATS)</div>
+        <p>ATS is a multi-disciplinary consulting firm practicing in chemistry and environmental science. Worked on several watershed contamination and remediation projects:</p>
+        <ul>
+          <li>Developed mobile data collection application for field workers to collect soil samples and USDA information</li>
+          <li>Created data synchronization system to central SQL Server database with laboratory data integration</li>
+          <li>Built web application for data viewing, downloading, querying and quality control</li>
+          <li>Developed chemistry instrument data upload system with EPA report generation</li>
+          <li>Technologies: MVC C#.NET, SQL Server, 50+ tables, millions of records, 100+ complex views</li>
+        </ul>
+      </div>
+
+      <div class="client-project">
+        <div class="client-name">Southern Minnesota Beet Sugar Cooperative (SMBSC)</div>
+        <p>Farmer-owned producer of beet sugar with 500+ shareholders producing 3 million tons annually. Provided over a decade of GIS, application and database support:</p>
+        <ul>
+          <li>Developed web applications using MVC C#.NET and Microsoft SQL Server</li>
+          <li>Implemented client-side Esri JavaScript libraries and HTML5/CSS3</li>
+          <li>Created applications for field measurements, cover crop research, soil sampling</li>
+          <li>Built real-time harvest tracking system with mobile data collection</li>
+          <li>Processed millions of GPS coordinates in real-time "big data" scenario</li>
+          <li>Developed Python scripts for data cleansing and integration</li>
+        </ul>
+      </div>
+
+      <div class="client-project">
+        <div class="client-name">United States Library of Congress</div>
+        <p>The largest library in the world and main research arm of the U.S. Congress:</p>
+        <ul>
+          <li>Designed and deployed full enterprise Esri Server software to Amazon AWS</li>
+          <li>Created architecture diagrams and configured dozen+ Windows and Red Hat Linux VMs</li>
+          <li>Designed optimal AWS security groups and load balancers</li>
+          <li>Migrated database storage from Microsoft SQL Server to PostgreSQL</li>
+          <li>Configured Red Hat Linux VM with PostgreSQL and Active Directory integration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="education-section">
+    <h3><i class="fas fa-graduation-cap"></i> Education & Certifications</h3>
+    <div class="degree">Bachelor of Science - Computer Science</div>
+    <div class="degree">Minor - Mathematics</div>
+    <div class="university">Bemidji State University, Bemidji, MN (1998-2002)</div>
+    
+    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
+      <div class="degree"><i class="fas fa-certificate"></i> Project Management Professional (PMP)</div>
+      <div class="university">License #1575759</div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+<p class="icons">
+  <a href="mailto:jlmarsh333@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+  |
+  <a href="https://www.linkedin.com/in/joshmarsh/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  |
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  |
+  <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
+  |
+  <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+  |
+  <a href="martial-arts.html"><i class="fas fa-dumbbell"></i> Martial Arts</a>
+</p>
+</footer>
+
+</body>
+</html>

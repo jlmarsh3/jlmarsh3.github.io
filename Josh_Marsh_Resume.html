@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Marsh - Resume</title>
+    <style>
+        @page {
+            margin: 0.5in;
+            size: letter;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+        }
+        
+        .resume {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            padding: 0.5in;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 15pt;
+            margin-bottom: 20pt;
+        }
+        
+        .name {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #2c5282;
+            margin-bottom: 5pt;
+        }
+        
+        .title {
+            font-size: 14pt;
+            color: #4a5568;
+            margin-bottom: 8pt;
+        }
+        
+        .contact {
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        .contact span {
+            margin: 0 10pt;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 18pt;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #2c5282;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 3pt;
+            margin-bottom: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
+        }
+        
+        /* Experience */
+        .job {
+            margin-bottom: 15pt;
+            page-break-inside: avoid;
+        }
+        
+        .job-header {
+            margin-bottom: 5pt;
+        }
+        
+        .job-title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #2d3748;
+        }
+        
+        .company {
+            font-size: 11pt;
+            color: #4a5568;
+            font-style: italic;
+        }
+        
+        .job-period {
+            font-size: 10pt;
+            color: #666;
+            float: right;
+            font-weight: bold;
+        }
+        
+        .job-description {
+            margin: 5pt 0;
+            text-align: justify;
+        }
+        
+        .accomplishments {
+            margin-top: 5pt;
+        }
+        
+        .accomplishments ul {
+            margin-left: 15pt;
+        }
+        
+        .accomplishments li {
+            margin-bottom: 2pt;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15pt;
+        }
+        
+        .skill-category {
+            margin-bottom: 10pt;
+        }
+        
+        .skill-category h4 {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 3pt;
+        }
+        
+        .skill-list {
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+        
+        /* Education */
+        .education-item {
+            margin-bottom: 8pt;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #2d3748;
+        }
+        
+        .university {
+            color: #4a5568;
+            font-style: italic;
+        }
+        
+        /* Client Projects */
+        .client-project {
+            margin-bottom: 12pt;
+            padding-left: 10pt;
+            border-left: 2px solid #e2e8f0;
+        }
+        
+        .client-name {
+            font-weight: bold;
+            color: #2c5282;
+            margin-bottom: 3pt;
+        }
+        
+        .client-project ul {
+            margin-left: 15pt;
+            margin-top: 3pt;
+        }
+        
+        .client-project li {
+            margin-bottom: 2pt;
+            font-size: 10pt;
+        }
+        
+        /* Print optimizations */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .job {
+                page-break-inside: avoid;
+            }
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">Josh Marsh</div>
+            <div class="title">Full Stack Developer & Technology Leader</div>
+            <div class="contact">
+                <span>3205 Greenbriar Ln NE, Bemidji, MN 56601</span>
+                <span>•</span>
+                <span>(218) 556-2934</span>
+                <span>•</span>
+                <span>jlmarsh333@gmail.com</span>
+                <span>•</span>
+                <span>LinkedIn: linkedin.com/in/joshmarsh</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <p>Career Full Stack Developer and Technology Leader with over 20 years of diverse experience spanning frontend to backend development, cloud infrastructure, and AI solutions. Certified Project Management Professional with proven expertise in leading teams and delivering scalable enterprise solutions. I pride myself in bridging the gap between client requirements and developing end products that match their needs through careful analysis, clear communication, and iterative development.</p>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="job">
+                <div class="job-header clearfix">
+                    <div class="job-period">2025 - Present</div>
+                    <div class="job-title">Associate Director, Technology</div>
+                    <div class="company">Omnicom Production (Remote)</div>
+                </div>
+                <div class="job-description">
+                    Leading technology initiatives and delivering innovative solutions for major enterprise clients. Retained position and responsibilities during company transition from Designory to Omnicom Production umbrella.
+                </div>
+                <div class="accomplishments">
+                    <ul>
+                        <li>Dynamic Video Editing Software development</li>
+                        <li>Enterprise CMS systems implementation</li>
+                        <li>WebGL applications and interactive experiences</li>
+                        <li>Asset Review and Approval Workflow Management systems</li>
+                        <li>Adobe integration and workflow solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header clearfix">
+                    <div class="job-period">2023 - 2025</div>
+                    <div class="job-title">Associate Director, Technology</div>
+                    <div class="company">Designory, Chicago, IL (Remote)</div>
+                </div>
+                <div class="job-description">
+                    Led technology initiatives and managed client relationships. Oversaw strategic technology decisions and mentored development teams while maintaining direct client engagement.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header clearfix">
+                    <div class="job-period">2022 - 2023</div>
+                    <div class="job-title">Lead Engineer, Technology</div>
+                    <div class="company">Designory, Chicago, IL (Remote)</div>
+                </div>
+                <div class="job-description">
+                    Spearheaded engineering efforts and mentored development teams. Involved technical leadership, code review processes, and ensuring development best practices across multiple projects.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header clearfix">
+                    <div class="job-period">2021 - 2022</div>
+                    <div class="job-title">Senior Engineer, Technology</div>
+                    <div class="company">Designory, Chicago, IL (Remote)</div>
+                </div>
+                <div class="job-description">
+                    Took on complex technical challenges and began mentoring junior developers while contributing to architectural decisions.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header clearfix">
+                    <div class="job-period">2020 - 2021</div>
+                    <div class="job-title">Engineer, Technology</div>
+                    <div class="company">Designory, Chicago, IL (Remote)</div>
+                </div>
+                <div class="job-description">
+                    Joined Designory to re-hone development skills after project management focus. Demonstrated consistent growth and technical leadership through rapid promotions.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header clearfix">
+                    <div class="job-period">2002 - 2020</div>
+                    <div class="job-title">Programming Manager</div>
+                    <div class="company">Pro-West & Associates Inc., Walker, MN</div>
+                </div>
+                <div class="job-description">
+                    Advanced through various roles including software developer, senior software developer, project manager, and programming unit manager. Successfully executed hundreds of projects across diverse industries including forestry, 911 dispatch, transportation, health care, agriculture, and environmental sciences.
+                </div>
+                
+                <div class="accomplishments">
+                    <strong>Major Client Projects:</strong>
+                    
+                    <div class="client-project">
+                        <div class="client-name">Ann Arbor Technical Services (ATS)</div>
+                        <p>Multi-disciplinary consulting firm in chemistry and environmental science:</p>
+                        <ul>
+                            <li>Developed mobile data collection application for soil samples and USDA information</li>
+                            <li>Created data synchronization system to central SQL Server database with laboratory integration</li>
+                            <li>Built web application for data viewing, downloading, querying and quality control</li>
+                            <li>Developed chemistry instrument data upload system with EPA report generation</li>
+                            <li>Technologies: MVC C#.NET, SQL Server, 50+ tables, millions of records, 100+ complex views</li>
+                        </ul>
+                    </div>
+
+                    <div class="client-project">
+                        <div class="client-name">Southern Minnesota Beet Sugar Cooperative (SMBSC)</div>
+                        <p>Farmer-owned producer with 500+ shareholders producing 3 million tons annually:</p>
+                        <ul>
+                            <li>Developed web applications using MVC C#.NET and Microsoft SQL Server</li>
+                            <li>Implemented client-side Esri JavaScript libraries and HTML5/CSS3</li>
+                            <li>Created applications for field measurements, cover crop research, soil sampling</li>
+                            <li>Built real-time harvest tracking system processing millions of GPS coordinates</li>
+                            <li>Developed Python scripts for data cleansing and integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="client-project">
+                        <div class="client-name">United States Library of Congress</div>
+                        <p>Largest library in the world and main research arm of U.S. Congress:</p>
+                        <ul>
+                            <li>Designed and deployed full enterprise Esri Server software to Amazon AWS</li>
+                            <li>Created architecture diagrams and configured dozen+ Windows and Red Hat Linux VMs</li>
+                            <li>Designed optimal AWS security groups and load balancers</li>
+                            <li>Migrated database storage from Microsoft SQL Server to PostgreSQL</li>
+                            <li>Configured Red Hat Linux VM with PostgreSQL and Active Directory integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages & Frameworks</h4>
+                    <div class="skill-list">C# .NET, MVC.NET, Python, JavaScript, PHP, VB.NET, VBScript, Visual Basic</div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Web Development</h4>
+                    <div class="skill-list">React, NextJS, Angular, HTML5, CSS3, jQuery, Bootstrap, WebGL, REST APIs, Web Services, ADO.NET, Entity Framework</div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Database Technologies</h4>
+                    <div class="skill-list">SQL Server, PostgreSQL, MySQL, Oracle, Fluent Migrator, Microsoft Access/VBA</div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Cloud & Infrastructure</h4>
+                    <div class="skill-list">AWS, Azure, Windows Server, Red Hat Linux, IIS, Apache, SSL, Tomcat, MS HyperV</div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>AI & Modern Technologies</h4>
+                    <div class="skill-list">fast.ai, langchain, AI Development, Mobile Development, Android Development</div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Enterprise & CMS</h4>
+                    <div class="skill-list">Optimizely, Sitecore, Kentico, MS SharePoint, AirTable, MS CRM, MS Dynamics SL</div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Project Management & Tools</h4>
+                    <div class="skill-list">Agile Methodology, MS Project, MS Visio, Lucid Charts, JIRA, Git, Nuget, Gulp</div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Business & Communication</h4>
+                    <div class="skill-list">Project Time/LOE Estimation, Scope Writing, Technical Documentation, Custom Training, Team Leadership</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div class="section">
+            <div class="section-title">Education & Certifications</div>
+            <div class="education-item">
+                <div class="degree">Bachelor of Science - Computer Science, Minor - Mathematics</div>
+                <div class="university">Bemidji State University, Bemidji, MN (1998-2002)</div>
+            </div>
+            <div class="education-item">
+                <div class="degree">Project Management Professional (PMP) - License #1575759</div>
+                <div class="university">Certified Project Management Professional</div>
+            </div>
+        </div>
+
+        <!-- Interests -->
+        <div class="section">
+            <div class="section-title">Additional Interests</div>
+            <p>Assistant instructor at Bemidji Total Martial Arts Academy. Hold 4th degree black belt in TKD, 2nd degree in Hapkido, 1st degree in Kumdo, and blue belt in Brazilian Jujitsu. Passionate about mentoring and providing guidance to students facing challenges.</p>
+        </div>
+    </div>
+</body>
+</html>

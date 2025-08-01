@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josh Marsh - Technical Skills</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="global.css">
+  
+  <style>
+    /* Skills Page Specific Styles */
+    .skill-category {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .skill-category:hover {
+      transform: translateY(-3px);
+    }
+
+    .skill-category h3 {
+      color: #1e3a8a;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skill-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill-item {
+      background: #f8faff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border-left: 3px solid #3b82f6;
+      font-size: 0.9em;
+    }
+
+    .legacy-section {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .legacy-section h5 {
+      color: #6b7280;
+      font-size: 0.85em;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .legacy-section .skill-item {
+      background: #f3f4f6;
+      border-left-color: #9ca3af;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .skill-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  
+  <script>
+    // Back to top functionality
+    window.addEventListener('scroll', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <img src="images/profile.jpg" alt="Profile photo" class="header-img" />
+  <div class="header-text">
+    <h1>Josh Marsh, PMP</h1>
+    <p>Skills</p>
+  </div>
+</header>
+
+  <!-- Enhanced Top Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="skills.html" class="active"><i class="fas fa-code"></i> Skills</a>
+      <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="Josh_Marsh_Resume.pdf" download><i class="fas fa-download"></i> Resume PDF</a>
+      <a href="mailto:jlmarsh333@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://www.linkedin.com/in/joshmarsh/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="martial-arts.html"><i class="fas fa-dumbbell"></i> Martial Arts</a>
+    </div>
+  </nav>
+
+  <section>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-code"></i> Programming Languages & Frameworks</h3>
+    <div class="skill-list">
+      <div class="skill-item">C# .NET</div>
+      <div class="skill-item">MVC.NET</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">PHP</div>
+    </div>
+    
+    <div class="legacy-section">
+      <h5>Legacy Technologies</h5>
+      <div class="skill-list">
+        <div class="skill-item">VB.NET</div>
+        <div class="skill-item">VBScript</div>
+        <div class="skill-item">Visual Basic</div>
+        <div class="skill-item">Google App Scripts</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-globe"></i> Web Development</h3>
+    <h4 style="color: #666; font-size: 0.9em; margin: 10px 0;">Frontend Technologies</h4>
+    <div class="skill-list">
+      <div class="skill-item">React</div>
+      <div class="skill-item">NextJS</div>
+      <div class="skill-item">Angular</div>
+      <div class="skill-item">HTML5</div>
+      <div class="skill-item">CSS3</div>
+      <div class="skill-item">jQuery</div>
+      <div class="skill-item">Bootstrap</div>
+      <div class="skill-item">WebGL</div>
+    </div>
+    
+    <div class="legacy-section">
+      <h5>Legacy Frontend</h5>
+      <div class="skill-list">
+        <div class="skill-item">AngularJS</div>
+        <div class="skill-item">Dojo</div>
+        <div class="skill-item">Razor</div>
+        <div class="skill-item">Silverlight</div>
+        <div class="skill-item">Flex</div>
+      </div>
+    </div>
+    
+    <h4 style="color: #666; font-size: 0.9em; margin: 15px 0 10px 0;">Backend & Services</h4>
+    <div class="skill-list">
+      <div class="skill-item">REST APIs</div>
+      <div class="skill-item">Web Services</div>
+      <div class="skill-item">ADO.NET</div>
+      <div class="skill-item">Entity Framework</div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-database"></i> Database Technologies</h3>
+    <div class="skill-list">
+      <div class="skill-item">SQL Server</div>
+      <div class="skill-item">PostgreSQL</div>
+      <div class="skill-item">MySQL</div>
+      <div class="skill-item">Oracle</div>
+      <div class="skill-item">Fluent Migrator</div>
+    </div>
+    
+    <div class="legacy-section">
+      <h5>Legacy Database</h5>
+      <div class="skill-list">
+        <div class="skill-item">Microsoft Access/VBA</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-cloud"></i> Cloud & Infrastructure</h3>
+    <div class="skill-list">
+      <div class="skill-item">AWS</div>
+      <div class="skill-item">Azure</div>
+      <div class="skill-item">Windows Server</div>
+      <div class="skill-item">Red Hat Linux</div>
+      <div class="skill-item">IIS</div>
+      <div class="skill-item">Apache</div>
+      <div class="skill-item">SSL</div>
+    </div>
+    
+    <div class="legacy-section">
+      <h5>Legacy Infrastructure</h5>
+      <div class="skill-list">
+        <div class="skill-item">Tomcat</div>
+        <div class="skill-item">MS HyperV</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-robot"></i> AI & Modern Technologies</h3>
+    <div class="skill-list">
+      <div class="skill-item">fast.ai</div>
+      <div class="skill-item">langchain</div>
+      <div class="skill-item">AI Development</div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+    <div class="skill-list">
+      <div class="skill-item">Android Development</div>
+      <div class="skill-item">Mobile-first Web Development</div>
+      <div class="skill-item">Responsive Design</div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-cogs"></i> Enterprise & CMS</h3>
+    <div class="skill-list">
+      <div class="skill-item">Optimizely</div>
+      <div class="skill-item">Sitecore</div>
+      <div class="skill-item">Kentico</div>
+      <div class="skill-item">MS SharePoint</div>
+      <div class="skill-item">AirTable</div>
+    </div>
+    
+    <div class="legacy-section">
+      <h5>Legacy Enterprise</h5>
+      <div class="skill-list">
+        <div class="skill-item">MS CRM</div>
+        <div class="skill-item">MS Dynamics SL</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-tasks"></i> Project Management & Tools</h3>
+    <div class="skill-list">
+      <div class="skill-item">Project Management Professional (PMP)</div>
+      <div class="skill-item">Agile Methodology</div>
+      <div class="skill-item">MS Project</div>
+      <div class="skill-item">MS Visio</div>
+      <div class="skill-item">Lucid Charts</div>
+      <div class="skill-item">JIRA</div>
+      <div class="skill-item">Git</div>
+      <div class="skill-item">Nuget</div>
+      <div class="skill-item">Gulp</div>
+    </div>
+    
+    <div class="legacy-section">
+      <h5>Legacy Tools & Methodologies</h5>
+      <div class="skill-list">
+        <div class="skill-item">Waterfall</div>
+        <div class="skill-item">Subversion</div>
+        <div class="skill-item">MS Team Foundation Server</div>
+        <div class="skill-item">Hudson Build</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3><i class="fas fa-chart-line"></i> Business & Communication</h3>
+    <div class="skill-list">
+      <div class="skill-item">Project Time/LOE Estimation</div>
+      <div class="skill-item">Scope Writing</div>
+      <div class="skill-item">Administrator Manual Writing</div>
+      <div class="skill-item">End-User Manual Writing</div>
+      <div class="skill-item">Hands-On Custom Training</div>
+      <div class="skill-item">Verbal & Written Communication</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<footer>
+<p class="icons">
+  <a href="mailto:jlmarsh333@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+  |
+  <a href="https://www.linkedin.com/in/joshmarsh/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  |
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  |
+  <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
+  |
+  <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+  |
+  <a href="martial-arts.html"><i class="fas fa-dumbbell"></i> Martial Arts</a>
+</p>
+</footer>
+
+</body>
+</html>
